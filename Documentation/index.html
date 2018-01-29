@@ -1,0 +1,1452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">
+	<link href="https://cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300" rel="stylesheet">
+	<title>Sigma documentation</title>
+</head>
+<body>
+<!--Main menu-->
+<div class="menu">
+	<div class="container">
+		<div class="row">
+			<div class="menu__wrapper col-8">
+				<div class="menu__brand">
+					<p>Sigma</p>
+				</div>
+			</div>
+			<div class="menu__wrapper col-4">
+				<nav class="">
+					<ul>
+						<li><a href="" data-toggle="modal" data-target="#reviewModal">Support</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</div>
+<!--Main menu-->
+
+<!--Documentation-->
+<div class="documentation container">
+	<div class="row">
+		<div class="col-md-3 d-md-block d-none">
+			<nav class="documentation__sidebar">
+				<ul class="documentation__sidebar--first-level">
+					<li><a class="active" href="#features">Features</a></li>
+					<li><a href="#project">Project Structure</a></li>
+					<li><a href="#html">HTML Structure</a></li>
+					<ul class="documentation__sidebar--second-level">
+						<li><a href="#layout">Layout</a></li>
+						<li><a href="#head">Head</a></li>
+						<li><a href="#navigation">Navigation panel</a></li>
+						<li><a href="#header">Header</a></li>
+						<li><a href="#section">Section</a></li>
+						<li><a href="#navs">Navs</a></li>
+						<li><a href="#btns">Buttons & links</a></li>
+						<li><a href="#cards">Cards</a></li>
+						<li><a href="#carousel">Carousel</a></li>
+						<li><a href="#pricing">Pricing</a></li>
+						<li><a href="#form">Contact form</a></li>
+						<li><a href="#footer-menu">Footer menu</a></li>
+						<li><a href="#footer-d">Footer</a></li>
+					</ul>
+					<li><a href="#css">CSS Structure</a></li>
+					<li><a href="#fonts">Fonts</a></li>
+					<li><a href="#js">JavaScript</a></li>
+					<li><a href="#source">Source code</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="col-md-9">
+			<div class="documentation__content">
+				<div id="features" class="documentation__block">
+					<h1>Features</h1>
+					<p>This template has everything that you need to easy develop minimal and modern portfolio:</p>
+					<ul>
+						<li>Semantically Correct / Valid HTML Code</li>
+						<li>Fully Responsive Layout</li>
+						<li>Cross browser compatible (Firefox, Safari, Opera, Chrome etc.)</li>
+						<li>4 color schemes</li>
+						<li>4 page variations of home-page for different types of apps</li>
+						<li>Working AJAX Contact Form with validation</li>
+						<li>Easy to Use and Customize</li>
+						<li>Google Web Fonts and Material design icons</li>
+					</ul>
+				</div>
+				
+				<div id="project" class="documentation__block">
+					<h1>Project Structure</h1>
+					<p>Template has the following project structure:</p>
+					<div class="file-tree">
+						<ul>
+							<li><i class="mdi mdi-folder" aria-hidden="true"></i>documentation</li>
+							<li><i class="mdi mdi-folder-open" aria-hidden="true"></i>template
+								<ul>
+									<li><i class="mdi mdi-folder-open" aria-hidden="true"></i>assets
+										<ul>
+											<li><i class="mdi mdi-folder" aria-hidden="true"></i>css</li>
+											<li><i class="mdi mdi-folder" aria-hidden="true"></i>img</li>
+											<li><i class="mdi mdi-folder" aria-hidden="true"></i>js</li>
+											<li><i class="mdi mdi-folder" aria-hidden="true"></i>scss</li>
+											<li><i class="mdi mdi-folder" aria-hidden="true"></i>video</li>
+										</ul>
+									</li>
+									<li><i class="mdi mdi-file-outline" aria-hidden="true"></i>about.html</li>
+									<li><i class="mdi mdi-file-outline" aria-hidden="true"></i>desktop.html</li>
+									<li><i class="mdi mdi-file-outline" aria-hidden="true"></i>faq.html</li>
+									<li><i class="mdi mdi-file-outline" aria-hidden="true"></i>features.html</li>
+									<li><i class="mdi mdi-file-outline" aria-hidden="true"></i>get-app.html</li>
+									<li><i class="mdi mdi-file-outline" aria-hidden="true"></i>index.html</li>
+									<li><i class="mdi mdi-file-outline" aria-hidden="true"></i>messenger.html</li>
+									<li><i class="mdi mdi-file-outline" aria-hidden="true"></i>pricing.html</li>
+									<li><i class="mdi mdi-file-outline" aria-hidden="true"></i>privacy.html</li>
+									<li><i class="mdi mdi-file-outline" aria-hidden="true"></i>webapp.html</li>
+									<li><i class="mdi mdi-file-outline" aria-hidden="true"></i>mail.php</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<p><b>index.html</b>, <b>dekstop.html</b>, <b>messenger.html</b> and <b>webapp.html</b> are used for
+						creating home-pages gor mobile app, desktop app, messenger and web-app respectively.</p>
+					<p><b>pricing.html</b> contain 4 types of price list.</p>
+					<p><b>get-app.html</b> contain contact form.</p>
+				</div>
+				
+				<div id="html" class="documentation__block">
+					<h1>HTML Structure</h1>
+					<p>All html-files consist of menu, header, sections and footer. They use UTF-8 codepage. Use the
+						editor with UTF-8 support to avoid problems with unreadable symbols.</p>
+					
+					<h2 id="layout">Layout</h2>
+					<p>This template has its 12-column grid. A <b>container</b> has width equal 1560px. Next classes of columns
+					are used for:</p>
+					
+					<div class="row">
+						<div class="col-md-12">
+							<div class="site-table--responsive">
+								<table class="site-table">
+									<tbody class="site-table__body">
+										<tr class="site-table__row">
+											<th class="site-table__th">Class</th>
+											<td class="site-table__td"><b>.col-</b></td>
+											<td class="site-table__td"><b>.col-m-</b></td>
+											<td class="site-table__td"><b>.col-t-</b></td>
+											<td class="site-table__td"><b>.col-l-</b></td>
+										</tr>
+										<tr class="site-table__row">
+											<th class="site-table__th">Max-width</th>
+											<td class="site-table__td">> 1200px</td>
+											<td class="site-table__td">< 1200px</td>
+											<td class="site-table__td">< 990px</td>
+											<td class="site-table__td">< 768px</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					
+					<h2 id="head">Head</h2>
+					<p>Tags with metainformation are located inside <b>&lt;head&gt;</b> tag. Fill them to provide information
+						about your CV to search engines:</p>
+					<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;meta name="description" content=""&gt;
+&lt;meta name="author" content=""&gt;</code></pre>
+					<p>Also there is <b>&lt;title&gt;</b> tag which you can edit too:</p>
+					<pre class="prettyprint code-text linenums"><code
+						class="prettyprint">&lt;title&gt;Document&lt;/title&gt;</code></pre>
+					<p>You can choose one of four finished color schemes. Just write name of css-file here:</p>
+					<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;link rel="stylesheet" href="assets/css/main.css"&gt;</code></pre>
+					
+					<h2 id="navigation">Navigation Panel</h2>
+					<p>The whole navigation panel is placed in <b>&lt;div class="menu"&gt;</b> and <b>&lt;div
+						class="mobile-menu d-none d-t-block"&gt;</b> tags. Navigation panel is divided into three parts: logo,
+						center menu and right menu. Also navigation has opportunity of adding dropdowns. Center and right menus
+						has similar structure:
+					</p>
+					<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;nav class="menu__center-nav"> &lt;!--or &lt;nav class="menu__left-nav d-l-none">-->
+  &lt;ul>
+    &lt;li>
+      &lt;div class="menu__dropdown">
+        &lt;a class="link link--gray menu__dropdown-btn">Home
+          &lt;span>&lt;i class="mdi mdi-chevron-down">&lt;/i>&lt;/span>
+        &lt;/a>
+        &lt;div class="menu__dropdown-content">
+          &lt;a class="link link--gray link--gray-active" href="index.html">Mobile App&lt;/a>
+          &lt;a class="link link--gray" href="messanger.html">Messanger&lt;/a>
+          &lt;a class="link link--gray" href="webapp.html">Web App&lt;/a>
+          &lt;a class="link link--gray" href="desktop.html">Desktop App&lt;/a>
+        &lt;/div>
+      &lt;/div>
+    &lt;/li>
+    &lt;li>&lt;a href="features.html" class="link link--gray">Features&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="pricing.html" class="link link--gray">Pricing&lt;/a>&lt;/li>
+  &lt;/ul>
+&lt;/nav></code></pre>
+					<p>You can easy change items and add new. But also you need edit links <b>&lt;div
+						class="mobile-menu d-none d-t-block"&gt;</b>. Code above in mobile menu looks like:</p>
+					<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;nav class="mobile-menu__wrapper">
+  &lt;ul class="mobile-menu__ul">
+    &lt;li class="mobile-menu__li mobile-menu__li-collapse">&lt;a class="link link--dark-gray">Home
+      &lt;span>&lt;i class="mdi mdi-chevron-down">&lt;/i>&lt;/span>
+    &lt;/a>&lt;/li>
+  &lt;li class="mobile-menu__ul--collapsed">
+    &lt;ul class="mobile-menu__ul">
+      &lt;li class="mobile-menu__li">
+        &lt;a class="link link--gray" href="index.html">Mobile App&lt;/a>
+      &lt;/li>
+        &lt;li class="mobile-menu__li"...>
+        &lt;li class="mobile-menu__li"...>
+        &lt;li class="mobile-menu__li"...>
+      &lt;/ul>
+    &lt;/li>
+    &lt;li class="mobile-menu__li">
+      &lt;a href="features.html" class="link link--dark-gray">Features&lt;/a>
+    &lt;/li>
+    &lt;li class="mobile-menu__li">
+      &lt;a href="pricing.html" class="link link--dark-gray">Pricing&lt;/a>
+    &lt;/li>
+    &lt;!--Also add items from right menu-->
+  &lt;/ul>
+&lt;/nav></code></pre>
+					<p>Don't forget add <b>menu.js</b> and <b>mobile-menu.js</b> before <b>&lt;/body></b>!!!</p>
+					
+					<h2 id="header">Header</h2>
+					<p><b>&lt;header></b> has main information about your item. Just write a few words about your product
+						to interest users. Main structure of <b>header</b> looks like:</p>
+					<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;header class="header-home"> &lt;!--You can add bg here-->
+  &lt;div class="container"> &lt;!--Or here-->
+    &lt;div class="row">
+      &lt;div class="col-12">
+        &lt;h2 class="header-home__title">Your title&lt;/h2>
+        &lt;p class="header-home__description">A few wors about your product&lt;/p>
+        &lt;div class="header-home__btns"> &lt;!--Btns to other pages or web-sites-->
+          &lt;a href="" class="site-btn site-btn--accent header-home__btn">Buy&lt;/a>
+          &lt;a href="" class="site-btn site-btn--light header-home__btn">Learn more&lt;/a>
+        &lt;/div>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+&lt;/header></code></pre>
+					<p>Add class <b>.header-home--center-content</b> in <b>&lt;header></b> to center all elements.</p>
+					
+					<h3>Wave-backround</h3>
+					<p>Some pages of template has waves on a background. Add between <b>&lt;header></b> and
+						<b>&lt;div class="container"></b> new <b>div</b>:</p>
+					<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;header class="header-home header-home--color">
+	&lt;div class="background background--wave">
+		&lt;div class="container">
+      &lt;!--Add something-->
+    &lt;/div>
+	&lt;/div>
+&lt;/header></code></pre>
+					<p>You can try add waves somewhere else if you want.</p>
+					<img src="assets/img/img_bg_wave.png" class="img-doc sigma-waves">
+					
+					<h2 id="section">Section</h2>
+					<p>All html-files consist of sections. They have next structure:</p>
+					<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;section class="section">
+  &lt;div class="container">
+    &lt;div class="row">
+      &lt;div class="col-12">
+        &lt;h3 class="section__title">Title of section&lt;/h3>
+        &lt;p class="section__description">Some information&lt;/p>
+      &lt;/div>
+    &lt;/div>
+    &lt;div class="row"> &lt;!--Add class of your block-->
+      &lt;!--Block content-->
+    &lt;/div>
+  &lt;/div>
+&lt;/section></code></pre>
+					<p>We have some variables of section design: main, light-gray and dark-gray. Add <b>.section--light</b>
+						class in <b>section</b> tag to add light gray color of background or <b>.section--dark</b> to dark gray
+						color. Also you can add <b>.section--half</b> to get section which has light background of top half of
+						section and light gray background of bottom (example you can find in <b>messenger.html</b> and
+						<b>desktop.html</b>).</p>
+					
+					<h3>Balloon</h3>
+					<p>You can add balloon in the end of page:</p>
+					<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div class="section section--last">
+  &lt;img class="section__img" src="assets/img/img_backgroud_footer.png">
+&lt;/div></code></pre>
+					<img class="img-doc" src="assets/img/img_backgroud_footer.png">
+					
+					<h3>Clouds</h3>
+					<p>Also you can decorate your website with help of clouds. Just add this code after <b>section</b> tag:</p>
+					<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div class="section section--light background background--clouds">&lt;/div></code></pre>
+					<img src="assets/img/img_bg_clouds.png" class="img-doc sigma-waves">
+					
+					<h2 id="navs">Navs</h2>
+					<p>The template has two types of navs for navigation inside a page: sidebar and navbar which fix
+						to bottom of main menu.</p>
+					<h3>Sidebar</h3>
+					<p>Examples of sidebars you can find in <b>faq.html</b> and <b>privacy.html</b>:</p>
+					<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;section class="section">
+  &lt;div class="container">
+    &lt;div class="row faq">
+      &lt;div class="col-9 col-t-12" ...> &lt;!--Don't forget add anchors for chapters here-->
+      &lt;div class="col-3 d-t-none">
+        &lt;nav class="sidebar">
+          &lt;ul class="sidebar__list">
+            &lt;li class="sidebar__item active">&lt;a href="#chapter1">Chapter 1&lt;/a>&lt;/li>
+            &lt;!--You can add more links here-->
+            &lt;li class="sidebar__item">&lt;a href="#chapterN">Chapter N&lt;/a>&lt;/li>
+          &lt;/ul>
+        &lt;/nav>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+&lt;/section></code></pre>
+					<p>But sidebar don't work without two js-files: <b>jquery.waypoints.js</b> and <b>sidebar.js</b>!!!</p>
+					<h3>Topbar</h3>
+					<p>There is the one topbar in <b>features.html</b>. It is fixed when scrolling to bottom of menu and hide
+						when it is not needed. Code of this nav looks like:</p>
+					<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;nav class="topbar">
+  &lt;div class="container">
+    &lt;div class="row">
+      &lt;div class="col-2 topbar__item">
+        &lt;a class="link link--gray topbar__link active" href="#freetrial">Free Trial&lt;/a>
+      &lt;/div>
+      &lt;div class="col-2 topbar__item">
+        &lt;a class="link link--gray topbar__link" href="#nosetup">No setup&lt;/a>
+      &lt;/div>
+      &lt;div class="col-2 topbar__item">
+        &lt;a class="link link--gray topbar__link" href="#safety">Safety&lt;/a>
+      &lt;/div>
+      &lt;div class="col-2 topbar__item">
+        &lt;a class="link link--gray topbar__link" href="#optimized">Optimized Data&lt;/a>
+      &lt;/div>
+      &lt;div class="col-2 topbar__item">
+        &lt;a class="link link--gray topbar__link" href="#access">Quick Access&lt;/a>
+      &lt;/div>
+      &lt;div class="col-2 topbar__item">
+        &lt;a class="link link--gray topbar__link" href="#support">24h Support&lt;/a>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+&lt;/nav></code></pre>
+					<p>You can try add 12 links instead 6 writing <b>.col-1</b> class instead <b>.col-2</b> or leave only 2
+						and write <b>.col-6</b>. But you need add js-files (<b>jquery.waypoints.js</b> and <b>topbar.js</b>)
+						otherwise nothing will work... Oo</p>
+					
+					<h2 id="btns">Buttons & links</h2>
+					<h3>Buttons</h3>
+					<p>This template has 4 types of buttons:</p>
+					<a class="site-btn site-btn--accent">Accent</a>
+					<a class="site-btn site-btn--dark">Dark</a>
+					<a class="site-btn site-btn--light">Light</a>
+					<a class="site-btn site-btn--invert">Invert</a>
+					<p>Their code looks like:</p>
+					<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;a href="" class="site-btn site-btn--accent">Accent&lt;/a>
+&lt;a href="" class="site-btn site-btn--dark">Dark&lt;/a>
+&lt;a href="" class="site-btn site-btn--light">Light&lt;/a>
+&lt;a href="" class="site-btn site-btn--invert">Invert&lt;/a></code></pre>
+					<h3>Links</h3>
+					<p>Also there are 3 types of links: <a href="" class="link link--accent-bold">Bold accent</a>,
+						<a href="" class="link link--accent">Accent</a> and
+						<a href="" class="link link--gray">Gray</a></p>
+					<p>Code of links:</p>
+					<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;a href="" class="link link--accent-bold">Bold accent&lt;/a>
+&lt;a href="" class="link link--accent">Accent&lt;/a>
+&lt;a href="" class="link link--gray">Gray&lt;/a></code></pre>
+					<h3>Toggle button</h3>
+					<p>A toggle button we use only for pricing block in <b>pricing.html</b> and <b>webapp.html</b>:</p>
+					<div class="col-md-12">
+						<div class="toggle-checkbox">
+							<input class="toggle-checkbox__input" type="checkbox" id="toggle"/>
+							<span class="toggle-checkbox__left">Cats</span>
+							<label class="toggle-checkbox__input-label" for="toggle">Toggle</label>
+							<span class="toggle-checkbox__right">Owls</span>
+						</div>
+					</div>
+					<p>A toggle button has next code:</p>
+					<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div class="toggle-checkbox">
+  &lt;input class="toggle-checkbox__input" type="checkbox" id="toggle"/>
+  &lt;span class="toggle-checkbox__left">Cats&lt;/span>
+  &lt;label class="toggle-checkbox__input-label" for="toggle">Toggle&lt;/label>
+  &lt;span class="toggle-checkbox__right">Owls&lt;/span>
+&lt;/div></code></pre>
+					<h3>Checkbox and radio button</h3>
+					<p>A checkbox and radio buttons are used in <b>form</b>. They have next style:</p>
+					<label class="radio-label">How many cats you want: </label>
+					<label class="radio-btn">
+						<input class="radio-btn__radio" type="radio" value="1-39" name="company-size" checked>
+						<span class="radio-btn__radio-custom"></span>
+						<span class="radio-btn__label">1-39</span>
+					</label>
+					<label class="radio-btn">
+						<input class="radio-btn__radio" type="radio" value="40+" name="company-size">
+						<span class="radio-btn__radio-custom"></span>
+						<span class="radio-btn__label">40+</span>
+					</label>
+					<label class="checkbox-btn">
+						<input class="checkbox-btn__checkbox" type="checkbox" name="terms" required>
+						<span class="checkbox-btn__checkbox-custom"><i class="mdi mdi-check"></i></span>
+						<span class="checkbox-btn__label">I read and agree to
+										<a href="" class="link link--accent link--accent-bold">Terms & Conditions</a></span>
+					</label>
+					<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div class="form__form-group">
+  &lt;label class="form__label">Company Size (Number of Emploees)&lt;/label>
+  &lt;label class="radio-btn">
+    &lt;input class="radio-btn__radio" type="radio" value="1-5" name="company-size" checked>
+    &lt;span class="radio-btn__radio-custom">&lt;/span>
+  &lt;span class="radio-btn__label">1-5&lt;/span>
+  &lt;/label>
+	&lt;!--You can add more radio btn here-->
+  &lt;label class="radio-btn...>
+&lt;/div>
+&lt;div class="form__form-group form__form-group--read-and-agree">
+  &lt;label class="checkbox-btn">
+    &lt;input class=" checkbox-btn__checkbox" type="checkbox" name="terms" required>
+    &lt;span class="checkbox-btn__checkbox-custom">&lt;i class="mdi mdi-check">&lt;/i>&lt;/span>
+    &lt;span class="checkbox-btn__label">I read and agree to
+      &lt;a href="" target="_blank" class="link link--accent link--accent-bold">Terms & Conditions&lt;/a>
+    &lt;/span>
+  &lt;/label>
+&lt;/div></code></pre>
+					
+					<h2 id="cards">Cards</h2>
+					<p>Cards are used in almost every page of this template. Base of card looks like:</p>
+					<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div class="card">
+  &lt;!--Content-->
+&lt;/div></code></pre>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="card card-doc">
+								<h5>Hi! I'm a card.</h5>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card card-doc">
+								<h5>Me too :)</h5>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card card-doc">
+								<h5>DRAKARYS!</h5>
+							</div>
+						</div>
+					</div>
+					<h3>F.A.Q. cards</h3>
+					<p>Cards that are used in faq.html require more attention. They display a answer to a question only after
+						click on card and hide after the second click.</p>
+					<div class="row faq">
+						<div class="col-md-12">
+							<div class="faq__card card">
+								<span class="faq__card-icon"><i class="mdi mdi-chevron-down"></i></span>
+								<h5 class="faq__card-title">Click me ;)</h5>
+								<div class="faq__card-description">
+									<p>Hello, human!</p>
+									<p>Do you like dragons?</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<p>These cards have next structure:</p>
+					<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div class="faq__card card">
+  &lt;span class="faq__card-icon">&lt;i class="mdi mdi-chevron-down">&lt;/i>&lt;/span>
+  &lt;h4 class="faq__card-title">Question&lt;/h4>
+  &lt;div class="faq__card-description">
+    &lt;p>Answer&lt;/p>
+  &lt;/div>
+&lt;/div></code></pre>
+					<p>They require js-code from <b>faq.js</b>.</p>
+					
+					<h2 id="carousel">Carousel</h2>
+					<p>This template has two kinds of carosel slider. The first of them use standard navigation and the
+						second has more complex navigation panel. More information about plugin that used in this template you
+						can find <a href="https://github.com/kenwheeler/slick/">here</a>.</p>
+					
+					<h3>Standard navigation</h3>
+					<p>Carousel with standard navigation looks like:</p>
+					<div class="row carousel">
+						<div class="col-md-12">
+							<div class="slider carousel__slider--think" id="user-thinks">
+								<div class="carousel__slide-wrap">
+									<div class="carousel__slide">
+										<div class="carousel__slide-avatar">
+											<img class="carousel__slide-avatar-img" src="assets/img/img_believe_avatar.png">
+											<p class="carousel__slide-avatar-name">Li Chang</p>
+											<p class="carousel__slide-avatar-work">Director Product Development, Company Ltd.</p>
+										</div>
+										<div class="carousel__slide-quote">
+											<h4 class="carousel__slide-quote-title">Elegant and efficient</h4>
+											<p class="carousel__slide-quote-description">“ An elegant, yet efficient, magic tool! I love the
+												overall design and the simple way that you can update or change a process. Awesome product. The
+												guys have put huge effort into this app and focused on simplicity and ease of use. “</p>
+										</div>
+									</div>
+								</div>
+								<div class="carousel__slide-wrap">
+									<div class="carousel__slide">
+										<div class="carousel__slide-avatar">
+											<img class="carousel__slide-avatar-img" src="assets/img/img_believe_avatar.png">
+											<p class="carousel__slide-avatar-name">Li Chang</p>
+											<p class="carousel__slide-avatar-work">Director Product Development, Company Ltd.</p>
+										</div>
+										<div class="carousel__slide-quote">
+											<h4 class="carousel__slide-quote-title">Elegant and efficient</h4>
+											<p class="carousel__slide-quote-description">“ An elegant, yet efficient, magic tool! I love the
+												overall design and the simple way that you can update or change a process. Awesome product. The
+												guys have put huge effort into this app and focused on simplicity and ease of use. “</p>
+										</div>
+									</div>
+								</div>
+								<div class="carousel__slide-wrap">
+									<div class="carousel__slide">
+										<div class="carousel__slide-avatar">
+											<img class="carousel__slide-avatar-img" src="assets/img/img_believe_avatar.png">
+											<p class="carousel__slide-avatar-name">Li Chang</p>
+											<p class="carousel__slide-avatar-work">Director Product Development, Company Ltd.</p>
+										</div>
+										<div class="carousel__slide-quote">
+											<h4 class="carousel__slide-quote-title">Elegant and efficient</h4>
+											<p class="carousel__slide-quote-description">“ An elegant, yet efficient, magic tool! I love the
+												overall design and the simple way that you can update or change a process. Awesome product. The
+												guys have put huge effort into this app and focused on simplicity and ease of use. “</p>
+										</div>
+									</div>
+								</div>
+								<div class="carousel__slide-wrap">
+									<div class="carousel__slide">
+										<div class="carousel__slide-avatar">
+											<img class="carousel__slide-avatar-img" src="assets/img/img_believe_avatar.png">
+											<p class="carousel__slide-avatar-name">Li Chang</p>
+											<p class="carousel__slide-avatar-work">Director Product Development, Company Ltd.</p>
+										</div>
+										<div class="carousel__slide-quote">
+											<h4 class="carousel__slide-quote-title">Elegant and efficient</h4>
+											<p class="carousel__slide-quote-description">“ An elegant, yet efficient, magic tool! I love the
+												overall design and the simple way that you can update or change a process. Awesome product. The
+												guys have put huge effort into this app and focused on simplicity and ease of use. “</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<p>You can easy add new slides and change content of them. A base code is next:</p>
+					<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div class="row carousel">
+  &lt;div class="col-12">
+    &lt;div class="slider carousel__slider--think" id="user-thinks">
+      &lt;div class="carousel__slide-wrap">
+        &lt;div class="carousel__slide">
+          &lt;!--Slide's content-->
+        &lt;/div>
+      &lt;/div>
+    &lt;!--More slides here-->
+    &lt;div class="carousel__slide-wrap">
+      &lt;div class="carousel__slide"...>
+    &lt;/div>
+  &lt;/div>
+&lt;/div></code></pre>
+					<p>Don't forget include <b>carousel.js</b> and <b>slick.min.js</b> in your html-file.</p>
+					
+					<h3>Navigation panel with images</h3>
+					<p>You can add navigation panel as here:</p>
+					<div class="row carousel">
+						<div class="col-md-12">
+							<ul id="carousel__navigation-feature-slider" class="carousel__navigation" role="tablist">
+								<div class="carousel__navigation-items">
+									<li class="carousel__navigation-item slick-active" role="presentation" value="0">
+										<svg id="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+										     width="100" height="100" viewBox="0 0 120 120">
+											<rect id="bg" class="svg-bg" width="120" height="120"/>
+											<path id="circle" class="svg-light-gray"
+											      d="M12,20a2,2,0,0,1,2,2V34a2,2,0,0,1-4,0V22A2,2,0,0,1,12,20ZM6,26H18a2,2,0,0,1,0,4H6A2,2,0,0,1,6,26ZM8,72a2,2,0,0,1,2,2V86a2,2,0,0,1-4,0V74A2,2,0,0,1,8,72ZM2,78H14a2,2,0,0,1,0,4H2A2,2,0,0,1,2,78Zm98,14a2,2,0,0,1,2,2v12a2,2,0,0,1-4,0V94A2,2,0,0,1,100,92Zm-6,6h12a2,2,0,0,1,0,4H94A2,2,0,0,1,94,98ZM60,20A40,40,0,1,1,20,60,40,40,0,0,1,60,20Z"/>
+											<g id="phone">
+												<rect id="base" class="svg-dark-gray" x="36" y="20" width="44" height="80" rx="4" ry="4"/>
+												<path id="button" class="svg-white"
+												      d="M40,30H76a2,2,0,0,1,2,2V86a2,2,0,0,1-2,2H40a2,2,0,0,1-2-2V32A2,2,0,0,1,40,30ZM58.5,91.25a2.5,2.5,0,1,1-2.5,2.5A2.5,2.5,0,0,1,58.5,91.25Z"/>
+											</g>
+											<g id="label">
+												<circle id="circle-2" data-name="circle" class="svg-element" cx="58" cy="59" r="16"/>
+												<image id="Free" x="46" y="55" width="23" height="8"
+												       xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAICAMAAAAldJTcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAM1BMVEUAAAD///////////////////////////////////////////////////////////8AAAC3K8SQAAAAD3RSTlMAVSJm3arMiLsR7ndEmTPX6l4jAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAFtJREFUCNdtjVEOgDAIQ7vBkMkm97+tYGaixn6Q5oX0oXim4hti/Gbx1piruG9R3bWDcmaHcocawMMaMO3+D9YvE0ne+eJHNrHnfm7oBOywAINQljd4erWmV8YJJGkDageXzLEAAAAASUVORK5CYII="/>
+											</g>
+										</svg>
+										<p>Free Trial</p>
+									</li>
+									<li class="carousel__navigation-item" role="presentation" value="1">
+										<svg id="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+										     width="100" height="100" viewBox="0 0 120 120">
+											<rect id="bg" class="svg-bg" width="120" height="120"/>
+											<path id="circle" class="svg-light-gray"
+											      d="M36,6H48a2,2,0,0,1,0,4H36A2,2,0,0,1,36,6Zm6-6a2,2,0,0,1,2,2V14a2,2,0,0,1-4,0V2A2,2,0,0,1,42,0ZM16,110H28a2,2,0,0,1,0,4H16A2,2,0,0,1,16,110Zm6-6a2,2,0,0,1,2,2v12a2,2,0,0,1-4,0V106A2,2,0,0,1,22,104Zm70-6h12a2,2,0,0,1,0,4H92A2,2,0,0,1,92,98Zm6-6a2,2,0,0,1,2,2v12a2,2,0,0,1-4,0V94A2,2,0,0,1,98,92ZM60,20A40,40,0,1,1,20,60,40,40,0,0,1,60,20Z"/>
+											<g id="speed">
+												<path id="scale" class="svg-dark-gray"
+												      d="M60,31h0A33,33,0,0,1,93,64v2.818A3.182,3.182,0,0,1,89.818,70H30.182A3.182,3.182,0,0,1,27,66.818V64A33,33,0,0,1,60,31Z"/>
+												<path id="max" class="svg-element"
+												      d="M83.671,41.019A32.883,32.883,0,0,1,93,64v2.818A3.182,3.182,0,0,1,89.818,70H60V64.69Z"/>
+												<circle id="base" class="svg-gray" cx="60" cy="64" r="25"/>
+												<image id="arrow" x="53" y="57" width="30" height="14"
+												       xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAOCAMAAAAPOFwLAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAgVBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAABdYQRBAAAAKXRSTlMAFIbS+NCCU/Dx/hX1waOHbE4yFtzAaxOS9ti8oYNnTC4QaFTy0/r0zpnURg4AAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAAgUlEQVQY05WRUQ6CMBBEBylgK4JQFEQqqKjs/S9IEGIa3TTh/b5kM7MDAN7GFyIIPbBEW/ogI9YqWlCM30n6Eu+T9JDl2tIh/SOKY5KesrwEAnJQQbh07NSqYo+f60tjrm13+4nmN+bedqWVXFvFpF77FuDRz7Zn7TTJ8/UeDDfJCDOoIidStO0EAAAAAElFTkSuQmCC"/>
+											</g>
+										</svg>
+										<p>No setup</p>
+									</li>
+									<li class="carousel__navigation-item" role="presentation" value="2">
+										<svg id="icon" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 120 120">
+											<rect id="bg" class="svg-bg" width="120" height="120"/>
+											<path id="circle" class="svg-light-gray"
+											      d="M112,36a2,2,0,0,1,2,2V50a2,2,0,0,1-4,0V38A2,2,0,0,1,112,36Zm-6,6h12a2,2,0,0,1,0,4H106A2,2,0,0,1,106,42ZM8,8a2,2,0,0,1,2,2V22a2,2,0,0,1-4,0V10A2,2,0,0,1,8,8ZM2,14H14a2,2,0,0,1,0,4H2A2,2,0,0,1,2,14ZM20,92a2,2,0,0,1,2,2v12a2,2,0,0,1-4,0V94A2,2,0,0,1,20,92Zm-6,6H26a2,2,0,0,1,0,4H14A2,2,0,0,1,14,98ZM60,20A40,40,0,1,1,20,60,40,40,0,0,1,60,20Z"/>
+											<g id="shield">
+												<path id="shield_light" class="svg-light"
+												      d="M60.752,81.9A2.866,2.866,0,0,1,60,82V16a1.975,1.975,0,0,1,1.18.393c3.37,2.5,13.594,9.343,26.121,10.54A3,3,0,0,1,89.993,29.9C90.138,39.995,88.551,74.278,60.752,81.9Z"/>
+												<path id="shield_dark" class="svg-gray"
+												      d="M59.248,81.9A2.867,2.867,0,0,0,60,82V16a1.975,1.975,0,0,0-1.18.393c-3.37,2.5-13.594,9.343-26.121,10.54A3,3,0,0,0,30.007,29.9C29.862,39.995,31.449,74.278,59.248,81.9Z"/>
+											</g>
+											<g id="lock">
+												<path id="lock-2" data-name="lock" class="svg-element"
+												      d="M70,75.25H88a4,4,0,0,1,4,4V92a4,4,0,0,1-4,4H70a4,4,0,0,1-4-4V79.25A4,4,0,0,1,70,75.25Zm13.522,0v-4.61c0-2.864-1.712-5.186-4.522-5.186s-4.522,2.322-4.522,5.186v4.61H71.087V68.915A6.85,6.85,0,0,1,77.87,62H80.13a6.85,6.85,0,0,1,6.783,6.915v6.339H83.522Z"/>
+												<path id="hole" class="svg-white"
+												      d="M79,78.75A3.453,3.453,0,1,1,75.594,82.2,3.43,3.43,0,0,1,79,78.75ZM77.3,82.17H80.7l1.13,8.068H76.174Z"/>
+											</g>
+										</svg>
+										<p>Safety</p>
+									</li>
+									<li class="carousel__navigation-item" role="presentation" value="3">
+										<svg id="icon" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 120 120">
+											<rect id="bg" class="svg-bg" width="120" height="120"/>
+											<path id="circle" class="svg-light-gray"
+											      d="M90,110h12a2,2,0,0,1,0,4H90A2,2,0,0,1,90,110Zm6-6a2,2,0,0,1,2,2v12a2,2,0,0,1-4,0V106A2,2,0,0,1,96,104ZM92,8h12a2,2,0,0,1,0,4H92A2,2,0,0,1,92,8Zm6-6a2,2,0,0,1,2,2V16a2,2,0,0,1-4,0V4A2,2,0,0,1,98,2ZM16,20H28a2,2,0,0,1,0,4H16A2,2,0,0,1,16,20Zm6-6a2,2,0,0,1,2,2V28a2,2,0,0,1-4,0V16A2,2,0,0,1,22,14Zm38,6A40,40,0,1,1,20,60,40,40,0,0,1,60,20Z"/>
+											<g id="phone">
+												<rect id="Прямоугольник_скругл._углы_2_копия_2"
+												      data-name="Прямоугольник, скругл. углы 2 копия 2" class="svg-dark-gray" x="38" y="20"
+												      width="44" height="80" rx="4" ry="4"/>
+												<path id="Эллипс_2_копия" data-name="Эллипс 2 копия" class="svg-white"
+												      d="M42,30H78a2,2,0,0,1,2,2V86a2,2,0,0,1-2,2H42a2,2,0,0,1-2-2V32A2,2,0,0,1,42,30ZM60.5,91.25a2.5,2.5,0,1,1-2.5,2.5A2.5,2.5,0,0,1,60.5,91.25Z"/>
+											</g>
+											<g id="UI">
+												<rect id="image" class="svg-light-gray" x="44" y="34" width="32" height="14" rx="2" ry="2"/>
+												<path id="text" class="svg-light"
+												      d="M46,52h4a2,2,0,0,1,0,4H46A2,2,0,0,1,46,52Zm0,8h4a2,2,0,0,1,0,4H46A2,2,0,0,1,46,60Z"/>
+												<path id="text-2" data-name="text" class="svg-gray"
+												      d="M56,52H74a2,2,0,0,1,0,4H56A2,2,0,0,1,56,52Zm0,8H74a2,2,0,0,1,0,4H56A2,2,0,0,1,56,60Z"/>
+												<path id="text-3" data-name="text" class="svg-dark-gray"
+												      d="M66,68h8a2,2,0,0,1,0,4H66A2,2,0,0,1,66,68Zm0,8h8a2,2,0,0,1,0,4H66A2,2,0,0,1,66,76Z"/>
+												<path id="text-4" data-name="text" class="svg-element"
+												      d="M52,68h8a2,2,0,0,1,0,4H52A2,2,0,0,1,52,68Zm0,8h8a2,2,0,0,1,0,4H52A2,2,0,0,1,52,76Z"/>
+											</g>
+										</svg>
+										<p>Optimized Data</p>
+									</li>
+									<li class="carousel__navigation-item" role="presentation" value="4">
+										<svg id="icon" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 120 120">
+											<rect id="bg" class="svg-bg" width="120" height="120"/>
+											<path id="circle" class="svg-light-gray"
+											      d="M112,20a2,2,0,0,1,2,2V34a2,2,0,0,1-4,0V22A2,2,0,0,1,112,20Zm-6,6h12a2,2,0,0,1,0,4H106A2,2,0,0,1,106,26ZM8,16a2,2,0,0,1,2,2V30a2,2,0,0,1-4,0V18A2,2,0,0,1,8,16ZM2,22H14a2,2,0,0,1,0,4H2A2,2,0,0,1,2,22ZM20,92a2,2,0,0,1,2,2v12a2,2,0,0,1-4,0V94A2,2,0,0,1,20,92Zm-6,6H26a2,2,0,0,1,0,4H14A2,2,0,0,1,14,98ZM60,20A40,40,0,1,1,20,60,40,40,0,0,1,60,20Z"/>
+											<g id="login">
+												<rect id="button" class="svg-element" x="51" y="84" width="18" height="6" rx="3" ry="3"/>
+												<path id="input" class="svg-gray"
+												      d="M41,72H79a3,3,0,0,1,0,6H41A3,3,0,0,1,41,72Zm0-10H79a3,3,0,0,1,0,6H41A3,3,0,0,1,41,62Z"/>
+												<path id="user" class="svg-dark-gray"
+												      d="M60,32a5,5,0,1,1-5,5A5,5,0,0,1,60,32ZM58,42h4a7,7,0,0,1,7,7v3H51V49A7,7,0,0,1,58,42Z"/>
+											</g>
+										</svg>
+										<p>Quick Access</p>
+									</li>
+									<li class="carousel__navigation-item" role="presentation" value="5">
+										<svg id="icon" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 120 120">
+											<rect id="bg" class="svg-bg" width="120" height="120"/>
+											<path id="circle" class="svg-light-gray"
+											      d="M8,72a2,2,0,0,1,2,2V86a2,2,0,0,1-4,0V74A2,2,0,0,1,8,72ZM2,78H14a2,2,0,0,1,0,4H2A2,2,0,0,1,2,78ZM112,92a2,2,0,0,1,2,2v12a2,2,0,0,1-4,0V94A2,2,0,0,1,112,92Zm-6,6h12a2,2,0,0,1,0,4H106A2,2,0,0,1,106,98Zm-6-82a2,2,0,0,1,2,2V30a2,2,0,0,1-4,0V18A2,2,0,0,1,100,16Zm-6,6h12a2,2,0,0,1,0,4H94A2,2,0,0,1,94,22ZM60,20A40,40,0,1,1,20,60,40,40,0,0,1,60,20Z"/>
+											<path id="headphones" class="svg-dark-gray"
+											      d="M83,71a4,4,0,0,1-4-4V59h0a19,19,0,0,0-38,0V71a8,8,0,0,0,8,8h5.779A2.981,2.981,0,0,1,57,78h6a3,3,0,0,1,0,6H57a2.981,2.981,0,0,1-2.221-1H47A10,10,0,0,1,37,73V71a4,4,0,0,1-4-4V61a4,4,0,0,1,4-4h0.1a22.985,22.985,0,0,1,45.8,0H83a4,4,0,0,1,4,4v6A4,4,0,0,1,83,71Z"/>
+											<text id="_24h" data-name="24h" class="svg-element svg-text" x="60.5" y="65.25">24h</text>
+										</svg>
+										<p>24h Support</p>
+									</li>
+								</div>
+							</ul>
+						</div>
+						<div class="col-md-12">
+							<div class="slider slider-img slider-img--big" id="feature-slider">
+								<div class="carousel__slide">
+									<div class="carousel__slide-content">
+										<h4 class="carousel__slide-title">Shape Your Ideas</h4>
+										<p class="carousel__slide-description">Lorem ipsum dolor sit amet, consectetur adipiscing
+											elit. Pellentesque placerat eros ac finibus congue. Integer consectetur, lorem nec
+											accumsan commodo, sem mauris pharetra arcu, id viverra eros ipsum ac lorem.
+											Suspendisse potenti.</p>
+									</div>
+									<div class="carousel__slide-img">
+										<img src="assets/img/img_feature_screen_1.png" alt="">
+									</div>
+								</div>
+								<div class="carousel__slide">
+									<div class="carousel__slide-content">
+										<h4 class="carousel__slide-title">Shape Your Ideas</h4>
+										<p class="carousel__slide-description">Lorem ipsum dolor sit amet, consectetur adipiscing
+											elit. Pellentesque placerat eros ac finibus congue. Integer consectetur, lorem nec
+											accumsan commodo, sem mauris pharetra arcu, id viverra eros ipsum ac lorem.
+											Suspendisse potenti.</p>
+									</div>
+									<div class="carousel__slide-img">
+										<img src="assets/img/img_feature_screen_2.png" alt="">
+									</div>
+								</div>
+								<div class="carousel__slide">
+									<div class="carousel__slide-content">
+										<h4 class="carousel__slide-title">Shape Your Ideas</h4>
+										<p class="carousel__slide-description">Lorem ipsum dolor sit amet, consectetur adipiscing
+											elit. Pellentesque placerat eros ac finibus congue. Integer consectetur, lorem nec
+											accumsan commodo, sem mauris pharetra arcu, id viverra eros ipsum ac lorem.
+											Suspendisse potenti.</p>
+									</div>
+									<div class="carousel__slide-img">
+										<img src="assets/img/img_feature_screen_3.png" alt="">
+									</div>
+								</div>
+								<div class="carousel__slide">
+									<div class="carousel__slide-content">
+										<h4 class="carousel__slide-title">Shape Your Ideas</h4>
+										<p class="carousel__slide-description">Lorem ipsum dolor sit amet, consectetur adipiscing
+											elit. Pellentesque placerat eros ac finibus congue. Integer consectetur, lorem nec
+											accumsan commodo, sem mauris pharetra arcu, id viverra eros ipsum ac lorem.
+											Suspendisse potenti.</p>
+									</div>
+									<div class="carousel__slide-img">
+										<img src="assets/img/img_feature_screen_4.png" alt="">
+									</div>
+								</div>
+								<div class="carousel__slide">
+									<div class="carousel__slide-content">
+										<h4 class="carousel__slide-title">Shape Your Ideas</h4>
+										<p class="carousel__slide-description">Lorem ipsum dolor sit amet, consectetur adipiscing
+											elit. Pellentesque placerat eros ac finibus congue. Integer consectetur, lorem nec
+											accumsan commodo, sem mauris pharetra arcu, id viverra eros ipsum ac lorem.
+											Suspendisse potenti.</p>
+									</div>
+									<div class="carousel__slide-img">
+										<img src="assets/img/img_feature_screen_5.png" alt="">
+									</div>
+								</div>
+								<div class="carousel__slide">
+									<div class="carousel__slide-content">
+										<h4 class="carousel__slide-title">Shape Your Ideas</h4>
+										<p class="carousel__slide-description">Lorem ipsum dolor sit amet, consectetur adipiscing
+											elit. Pellentesque placerat eros ac finibus congue. Integer consectetur, lorem nec
+											accumsan commodo, sem mauris pharetra arcu, id viverra eros ipsum ac lorem.
+											Suspendisse potenti.</p>
+									</div>
+									<div class="carousel__slide-img">
+										<img src="assets/img/img_feature_screen_6.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<p>Just add additional <b>row</b> with navigation panel's code like this:</p>
+					<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div class="row carousel">
+  &lt;div class="col-12">
+    &lt;div class="carousel__navigation">
+      &lt;ul id="carousel__navigation-feature-slider" class="carousel__navigation-items"
+          role="tablist">
+        &lt;li class="carousel__navigation-item slick-active" role="presentation" value="0">
+          &lt;!--You can add img or svg here-->
+          &lt;p>Free Trial&lt;/p>
+        &lt;/li>
+        &lt;!--Amount of li should be equal to amount of slides-->
+        &lt;li class="carousel__navigation-item" role="presentation" value="N"...>
+      &lt;/ul>
+    &lt;/div>
+  &lt;/div>
+  &lt;div class="col-12">
+    &lt;div class="slider slider-img slider-img--big" id="feature-slider">
+      &lt;div class="carousel__slide">
+        &lt;!--Slide content-->
+      &lt;/div>
+      &lt;!--Other slides-->
+      &lt;div class="carousel__slide"...>
+    &lt;/div>
+  &lt;/div>
+&lt;/div></code></pre>
+					
+					<h2 id="pricing">Pricing</h2>
+					<p>The template has 4 types of design of pricing. You can choose any of them.</p>
+					
+					<h3>Simple pricing</h3>
+					<p>This type of pricing consists only of cards with buttons.</p>
+					<div class="row pricing pricing--simple">
+						<div class="col-md-4 col-t-6">
+							<div class="pricing__card card">
+								<div class="pricing__card-head pricing__card-head--other-color-1">
+									<h4 class="pricing__card-title">Basic</h4>
+									<p class="pricing__card-price pricing__card-price--year">$ 108<span
+										class="pricing__card-price-caption">/year</span></p>
+									<p class="pricing__card-price--per-month">$9 billed monthly</p>
+								</div>
+								<div class="pricing__opportunities">
+									<p>10 pages</p>
+									<p>2 Gb storage</p>
+									<div class="pricing__opportunities--not-available">
+										<p>Integrated e-commerce</p>
+										<p>Custom domain free</p>
+										<p>24/7 Customer support</p>
+									</div>
+								</div>
+								<a class="site-btn site-btn--light">Select plan</a>
+							</div>
+						</div>
+						<div class="col-md-4 col-t-6">
+							<div class="pricing__card pricing__card--recommend card">
+								<div class="pricing__card-head">
+									<p class="pricing__card-recommend">Recommended</p>
+									<h4 class="pricing__card-title">Business</h4>
+									<p class="pricing__card-price pricing__card-price--year">$ 228<span
+										class="pricing__card-price-caption">/year</span></p>
+									<p class="pricing__card-price--per-month">$19 billed monthly</p>
+								</div>
+								<div class="pricing__opportunities">
+									<p>20 pages</p>
+									<p>16 Gb storage</p>
+									<p>Integrated e-commerce</p>
+									<p>Custom domain free</p>
+									<div class="pricing__opportunities--not-available">
+										<p>24/7 Customer support</p>
+									</div>
+								</div>
+								<a class="site-btn site-btn--accent">Select plan</a>
+							</div>
+						</div>
+						<div class="col-md-4 col-t-6">
+							<div class="pricing__card card">
+								<div class="pricing__card-head pricing__card-head--other-color-2">
+									<h4 class="pricing__card-title">Pro</h4>
+									<p class="pricing__card-price pricing__card-price--year">$ 468<span
+										class="pricing__card-price-caption">/year</span></p>
+									<p class="pricing__card-price--per-month">$39 billed monthly</p>
+								</div>
+								<div class="pricing__opportunities">
+									<p>50 pages</p>
+									<p>500 Gb storage</p>
+									<p>Integrated e-commerce</p>
+									<p>Custom domain free</p>
+									<p>24/7 Customer support</p>
+								</div>
+								<a class="site-btn site-btn--light">Select plan</a>
+							</div>
+						</div>
+					</div>
+					<p>Its code is next:</p>
+					<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div class="row pricing pricing--simple">
+  &lt;div class="col-3 col-t-6">
+    &lt;div class="pricing__card card">
+      &lt;div class="pricing__card-head pricing__card-head--other-color-1">
+        &lt;h4 class="pricing__card-title">Basic&lt;/h4>
+        &lt;p class="pricing__card-price pricing__card-price--year">$ 108&lt;span
+              class="pricing__card-price-caption">/year&lt;/span>&lt;/p>
+        &lt;p class="pricing__card-price--per-month">$9 billed monthly&lt;/p>
+      &lt;/div>
+      &lt;div class="pricing__opportunities">
+        &lt;p>10 pages&lt;/p>
+        &lt;p>2 Gb storage&lt;/p>
+        &lt;div class="pricing__opportunities--not-available">
+          &lt;p>Integrated e-commerce&lt;/p>
+          &lt;p>Custom domain free&lt;/p>
+          &lt;p>24/7 Customer support&lt;/p>
+        &lt;/div>
+      &lt;/div>
+      &lt;a href="" class="site-btn site-btn--light">Select plan&lt;/a>
+    &lt;/div>
+  &lt;/div>
+  &lt;!--More cards-->
+  &lt;div class="col-3 col-t-6"...>
+&lt;/div></code></pre>
+					
+					<h3>Pricing with a toggle</h3>
+					<p>You can add a toggle of prices on your website:</p>
+					<div class="row pricing pricing--toggle">
+						<div class="col-12">
+							<div class="toggle-checkbox">
+								<input class="toggle-checkbox__input" type="checkbox" id="pricing-toggle"/>
+								<span class="toggle-checkbox__left">Monthly</span>
+								<label class="toggle-checkbox__input-label" for="pricing-toggle">Toggle</label>
+								<span class="toggle-checkbox__right">Yearly</span>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="pricing__card card">
+								<h4 class="pricing__card-title">Basic</h4>
+								<p class="pricing__card-price pricing__card-price--year">$ 108</p>
+								<p class="pricing__card-price pricing__card-price--month">$ 10</p>
+								<p class="pricing__card-price--per-month">$9 billed monthly</p>
+								<div class="pricing__card-price-save-wrap">
+									<p class="pricing__card-price-save">Save 10%</p>
+									<hr class="pricing__hr">
+								</div>
+								<div class="pricing__opportunities">
+									<p>10 pages</p>
+									<p>2 Gb storage</p>
+									<div class="pricing__opportunities--not-available">
+										<p>Integrated e-commerce</p>
+										<p>Custom domain free</p>
+										<p>24/7 Customer support</p>
+									</div>
+								</div>
+								<a href="" class="site-btn site-btn--light">Select plan</a>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="pricing__card card">
+								<h4 class="pricing__card-title pricing__card-title--accent">Pro</h4>
+								<p class="pricing__card-price pricing__card-price--year">$ 228</p>
+								<p class="pricing__card-price pricing__card-price--month">$ 24</p>
+								<p class="pricing__card-price--per-month">$19 billed monthly</p>
+								<div class="pricing__card-price-save-wrap">
+									<p class="pricing__card-price-save">Save 15%</p>
+									<hr class="pricing__hr">
+								</div>
+								<div class="pricing__opportunities">
+									<p>10 pages</p>
+									<p>2 Gb storage</p>
+									<p>Integrated e-commerce</p>
+									<p>Custom domain free</p>
+									<div class="pricing__opportunities--not-available">
+										<p>24/7 Customer support</p>
+									</div>
+								</div>
+								<a href="" class="site-btn site-btn--accent">Select plan</a>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="pricing__card card">
+								<h4 class="pricing__card-title">Basic</h4>
+								<p class="pricing__card-price pricing__card-price--year">$ 468</p>
+								<p class="pricing__card-price pricing__card-price--month">$ 42</p>
+								<p class="pricing__card-price--per-month">$39 billed monthly</p>
+								<div class="pricing__card-price-save-wrap">
+									<p class="pricing__card-price-save">Save 20%</p>
+									<hr class="pricing__hr">
+								</div>
+								<div class="pricing__opportunities">
+									<p>10 pages</p>
+									<p>2 Gb storage</p>
+									<p>Integrated e-commerce</p>
+									<p>Custom domain free</p>
+									<p>24/7 Customer support</p>
+								</div>
+								<a href="" class="site-btn site-btn--light">Select plan</a>
+							</div>
+						</div>
+					</div>
+					<p>Most of the code does not differ from the code of a simple pricing. The code of a toggle button you can
+						find above in this documentation.</p>
+					<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div class="row pricing pricing--toggle">
+  &lt;div class="col-12">
+    &lt;div class="toggle-checkbox"...>
+  &lt;/div>
+  &lt;div class="col-4">
+    &lt;div class="pricing__card card">
+      &lt;h4 class="pricing__card-title">Basic&lt;/h4>
+      &lt;p>This is the basic plan for getting started and growing your business.&lt;/p>
+      &lt;p class="pricing__card-price pricing__card-price--year">$ 108&lt;/p>
+      &lt;p class="pricing__card-price pricing__card-price--month">$ 10&lt;/p>
+      &lt;p class="pricing__card-price--per-month">$9 billed monthly&lt;/p>
+      &lt;div class="pricing__card-price-save-wrap">
+        &lt;p class="pricing__card-price-save">Save 10%&lt;/p>
+        &lt;hr class="pricing__hr">
+      &lt;/div>
+      &lt;div class="pricing__opportunities">
+        &lt;p>10 pages&lt;/p>
+        &lt;p>2 Gb storage&lt;/p>
+        &lt;div class="pricing__opportunities--not-available">
+          &lt;p>Integrated e-commerce&lt;/p>
+          &lt;p>Custom domain free&lt;/p>
+          &lt;p>24/7 Customer support&lt;/p>
+        &lt;/div>
+      &lt;/div>
+      &lt;a href="" class="site-btn site-btn--light">Select plan&lt;/a>
+    &lt;/div>
+  &lt;/div>
+  &lt;div class="col-4"...>
+  &lt;div class="col-4"...>
+&lt;/div></code></pre>
+					<p>Include <b>pricing.js</b> in your html to activate a function of the toggle.</p>
+					
+					<h3>Common Pricing</h3>
+					<p>This type of pricing has slider which can switch price plans:</p>
+					<div class="row pricing pricing--common">
+						<div class="col-md-12">
+							<div class="pricing__card card">
+								<div class="pricing__card-price-wrap">
+									<div class="pricing__card-price">
+										<p id="month">$ 19.99</p>
+										<p class="pricing__card-price-caption">per month</p>
+									</div>
+									<div class="pricing__card-price">
+										<p id="year">$ 228.5</p>
+										<p class="pricing__card-price-caption">per year</p>
+									</div>
+								</div>
+								<select class="d-none" name="price-month" id="price">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+								<div class="pricing__plans">
+									<div class="pricing__plan pricing__plan--hidden">
+										<h4 class="pricing__card-title">Select plan</h4>
+									</div>
+									<div class="pricing__plan">
+										<h4 class="pricing__card-title">Basic</h4>
+										<div class="pricing__opportunities">
+											<p>10 pages</p>
+											<p>2 Gb storage</p>
+											<p>Donations</p>
+										</div>
+									</div>
+									<div class="pricing__plan active">
+										<h4 class="pricing__card-title">Regular</h4>
+										<div class="pricing__opportunities">
+											<p>20 pages</p>
+											<p>16 Gb storage</p>
+											<p>Donations</p>
+											<p>Integrated e-commerce</p>
+											<p>Custom domain free</p>
+										</div>
+									</div>
+									<div class="pricing__plan pricing__plan--disable">
+										<h4 class="pricing__card-title">Premium</h4>
+										<div class="pricing__opportunities">
+											<p>30 pages</p>
+											<p>100 Gb storage</p>
+											<p>Donations</p>
+											<p>Integrated e-commerce</p>
+											<p>Custom domain free</p>
+											<p>24/7 Customer support</p>
+										</div>
+									</div>
+									<div class="pricing__plan pricing__plan--disable pricing__plan--last">
+										<h4 class="pricing__card-title">Enterprise</h4>
+										<div class="pricing__opportunities">
+											<p>50 pages</p>
+											<p>500 Gb storage</p>
+											<p>Donations</p>
+											<p>Integrated e-commerce</p>
+											<p>Custom domain free</p>
+											<p>24/7 Customer support</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div class="row pricing pricing--common">
+  &lt;div class="col-10 col-t-12 col-offset-1">
+    &lt;div class="pricing__card card">
+      &lt;div class="pricing__card-price-wrap">
+        &lt;div class="pricing__card-price">
+          &lt;p id="month">$ 19.99&lt;/p>
+          &lt;p class="pricing__card-price-caption">per month&lt;/p>
+        &lt;/div>
+        &lt;div class="pricing__card-price">
+          &lt;p id="year">$ 228.5&lt;/p>
+          &lt;p class="pricing__card-price-caption">per year&lt;/p>
+        &lt;/div>
+      &lt;/div>
+      &lt;select class="d-none" name="price-month" id="price">
+        &lt;option>1&lt;/option>
+        &lt;option>2&lt;/option>
+        &lt;option>3&lt;/option>
+        &lt;option>4&lt;/option>
+        &lt;option>5&lt;/option>
+      &lt;/select>
+      &lt;div class="pricing__plans">
+        &lt;div class="pricing__plan pricing__plan--hidden">
+          &lt;h4 class="pricing__card-title">Select plan&lt;/h4>
+        &lt;/div>
+        &lt;div class="pricing__plan"...>
+          &lt;div class="pricing__plan active">
+            &lt;h4 class="pricing__card-title">Regular&lt;/h4>
+            &lt;div class="pricing__opportunities">
+              &lt;p>20 pages&lt;/p>
+              &lt;p>16 Gb storage&lt;/p>
+              &lt;p>Donations&lt;/p>
+              &lt;p>Integrated e-commerce&lt;/p>
+              &lt;p>Custom domain free&lt;/p>
+            &lt;/div>
+          &lt;/div>
+          &lt;div class="pricing__plan pricing__plan--disable"...>
+          &lt;div class="pricing__plan pricing__plan--disable pricing__plan--last"...>
+        &lt;/div>
+      &lt;/div>
+    &lt;/div>
+&lt;/div></code></pre>
+					<p>You need include <b>pricing.js</b> and <b>jquery-ui.min.js</b> to use it.</p>
+					
+					<h3>Price table</h3>
+					<p>A price table is a simple table with rows and columns:</p>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="site-table">
+								<table class="site-table--responsive site-table--responsive-js">
+									<thead class="site-table__head">
+										<tr>
+											<th></th>
+											<th class="site-table__head-th site-table__head-th--other-color-1">
+												<p>Basic</p>
+												<button class="site-table__btn-next" aria-label="Next" type="button">
+													<span>
+														<i class="mdi mdi-chevron-right"></i>
+													</span>
+												</button>
+											</th>
+											<th class="site-table__head-th site-table__head-th--accent">
+												<button class="site-table__btn-prev" aria-label="Next" type="button">
+													<span>
+														<i class="mdi mdi-chevron-left"></i>
+													</span>
+												</button>
+												<p>Business</p>
+												<button class="site-table__btn-next" aria-label="Next" type="button">
+													<span>
+														<i class="mdi mdi-chevron-right"></i>
+													</span>
+												</button>
+											</th>
+											<th class="site-table__head-th site-table__head-th--other-color-2">
+												<button class="site-table__btn-prev" aria-label="Next" type="button">
+													<span>
+														<i class="mdi mdi-chevron-left"></i>
+													</span>
+												</button>
+												<p>Pro</p>
+											</th>
+										</tr>
+									</thead>
+									<tbody class="site-table__body">
+									<tr class="site-table__row">
+										<th class="site-table__th">Users included</th>
+										<td class="site-table__td"><p>5</p></td>
+										<td class="site-table__td"><p>20</p></td>
+										<td class="site-table__td"><p>50</p></td>
+									</tr>
+									<tr class="site-table__row">
+										<th class="site-table__th">Conversations</th>
+										<td class="site-table__td site-table__td--bold"><p>Unlimited</p></td>
+										<td class="site-table__td site-table__td--bold"><p>Unlimited</p></td>
+										<td class="site-table__td site-table__td--bold"><p>Unlimited</p></td>
+									</tr>
+									<tr class="site-table__row">
+										<th class="site-table__th">Desktop and Mobile Apps</th>
+										<td class="site-table__td">
+											<p><span class="site-table__icon"><i class="mdi mdi-check"></i></span></p>
+										</td>
+										<td class="site-table__td">
+											<p><span class="site-table__icon"><i class="mdi mdi-check"></i></span></p>
+										</td>
+										<td class="site-table__td">
+											<p><span class="site-table__icon"><i class="mdi mdi-check"></i></span></p>
+										</td>
+									</tr>
+									<tr class="site-table__row">
+										<th class="site-table__th">Notifications</th>
+										<td class="site-table__td"></td>
+										<td class="site-table__td">
+											<p><span class="site-table__icon"><i class="mdi mdi-check"></i></span></p>
+										</td>
+										<td class="site-table__td">
+											<p><span class="site-table__icon"><i class="mdi mdi-check"></i></span></p>
+										</td>
+									</tr>
+									<tr class="site-table__row">
+										<th class="site-table__th site-table__th--new">Search engine</th>
+										<td class="site-table__td">
+										</td>
+										<td class="site-table__td">
+										</td>
+										<td class="site-table__td">
+											<p><span class="site-table__icon"><i class="mdi mdi-check"></i></span></p>
+										</td>
+									</tr>
+									<tr class="site-table__btn-row">
+										<th class="site-table__th"></th>
+										<td class="site-table__td">
+											<p><a href="" class="site-btn site-btn--light">Select plan</a></p>
+										</td>
+										<td class="site-table__td">
+											<p><a href="" class="site-btn site-btn--accent">Select plan</a></p>
+										</td>
+										<td class="site-table__td">
+											<p><a href="" class="site-btn site-btn--light">Select plan</a></p>
+										</td>
+									</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<p>There is only <b>table</b> tag in the code:</p>
+					<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div class="site-table">
+  &lt;table class="site-table--responsive site-table--responsive-js">
+    &lt;thead class="site-table__head">
+      &lt;tr>
+        &lt;th>&lt;/th>
+        &lt;th class="site-table__head-th site-table__head-th--other-color-1">
+          &lt;p>Basic&lt;/p>
+          &lt;button class="site-table__btn-next" aria-label="Next" type="button">
+            &lt;span>&lt;i class="mdi mdi-chevron-right">&lt;/i>&lt;/span>
+          &lt;/button>
+        &lt;/th>
+        &lt;th class="site-table__head-th site-table__head-th--accent"...>
+        &lt;th class="site-table__head-th site-table__head-th--other-color-2"...>
+      &lt;/tr>
+    &lt;/thead>
+    &lt;tbody class="site-table__body">
+      &lt;tr class="site-table__row">
+        &lt;th class="site-table__th site-table__th--new">Invisible mode&lt;/th>
+        &lt;td class="site-table__td">&lt;/td>
+        &lt;td class="site-table__td">
+          &lt;p>&lt;span class="site-table__icon">&lt;i class="mdi mdi-check">&lt;/i>&lt;/span>&lt;/p>
+        &lt;/td>
+        &lt;td class="site-table__td"...>
+        &lt;td class="site-table__td"...>
+      &lt;/tr>
+      &lt;!--More rows-->
+      &lt;tr class="site-table__row"...>
+      &lt;tr class="site-table__btn-row">
+        &lt;th class="site-table__th">&lt;/th>
+        &lt;td class="site-table__td">
+          &lt;p>&lt;a href="" class="site-btn site-btn--light">Select plan&lt;/a>&lt;/p>
+        &lt;/td>
+        &lt;td class="site-table__td"...>
+        &lt;td class="site-table__td"...>
+        &lt;td class="site-table__td"...>
+      &lt;/tr>
+    &lt;/tbody>
+  &lt;/table>
+&lt;/div></code></pre>
+					<p>You can easy use such tables anywhere.</p>
+					
+					<h2 id="form">Contact form</h2>
+					<p>Set up <b>mail.php</b> script to send e-mails on your address by providing your email address in following
+						variable: <b>$emailTo = "email@sitename.com"</b>. Also include <b>form.js</b> on html-page with form.
+						That’s it. Now contact form is working. Of course, if you set up PHP on your server right.
+					</p>
+					
+					<h2 id="footer-menu">Footer menu</h2>
+					<p>A footer nav has simple structure:</p>
+					<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div class="container footer-menu">
+  &lt;div class="row">
+    &lt;div class="col-12">
+      &lt;!--You can add img or svg here-->
+      &lt;nav class="footer-menu__nav">
+        &lt;ul>
+          &lt;li>&lt;a class="link link--gray" href="about.html">About&lt;/a>&lt;/li>
+          &lt;li>&lt;a class="link link--gray" href="faq.html">FAQ&lt;/a>&lt;/li>
+          &lt;li>&lt;a class="link link--gray" href="privacy.html">Privacy&lt;/a>&lt;/li>
+        &lt;/ul>
+      &lt;/nav>
+      &lt;p class="footer-menu__social">
+        &lt;a class="link link--gray" href="">
+          &lt;i class="mdi mdi-twitter" aria-hidden="true">&lt;/i>
+        &lt;/a>
+        &lt;a class="link link--gray" href=""...>
+        &lt;a class="link link--gray" href=""...>
+      &lt;/p>
+    &lt;/div>
+  &lt;/div>
+&lt;/div></code></pre>
+					
+					<h2 id="footer-d">Footer</h2>
+					<p>A footer is placed in at the end of web-pages:</p>
+					<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div class="footer">
+  &lt;div class="container">
+    &lt;div class="row">
+      &lt;div class="col-12">
+        &lt;p>© 2017 Sigma – Featured as App Presentation PSD Template  |  Made by
+        &lt;a href="" class="link link--gray">Aspirity&lt;/a>&lt;/p>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+&lt;/div></code></pre>
+				</div>
+				
+				<div id="css" class="documentation__block">
+					<h1>CSS Structure</h1>
+					<p>There are 6 css-files:</p>
+					<div class="file-tree">
+						<ul>
+							<li><i class="mdi mdi-folder-open" aria-hidden="true"></i>template
+								<ul>
+									<li><i class="mdi mdi-folder-open" aria-hidden="true"></i>assets
+										<ul>
+											<li><i class="mdi mdi-folder-open" aria-hidden="true"></i>css
+												<ul>
+													<li><i class="mdi mdi-file-outline" aria-hidden="true"></i>blue.css</li>
+													<li><i class="mdi mdi-file-outline" aria-hidden="true"></i>green.css</li>
+													<li><i class="mdi mdi-file-outline" aria-hidden="true"></i>jquery-ui.min.css</li>
+													<li><i class="mdi mdi-file-outline" aria-hidden="true"></i>main.css</li>
+													<li><i class="mdi mdi-file-outline" aria-hidden="true"></i>red.css</li>
+													<li><i class="mdi mdi-file-outline" aria-hidden="true"></i>violet.css</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<p><b>blue.css</b>, <b>green.css</b>, <b>red.css</b>, and <b>violet.css</b> are color schemes of template.
+						<br><b>main.css</b> is file which you can use to edit styles with help <a href="http://sass-lang.com/"
+					                                                                         target="_blank">
+						Sass</a>. How do it <a href="#source">here</a>.<br><b>jquery-ui.min.css</b> are used for <a
+							class="link link--accent" href="#pricing">pricing</a>.</p>
+				</div>
+				
+				<div id="fonts" class="documentation__block">
+					<h1>Fonts</h1>
+					<p>This template has a fonr from <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>:
+							<a href="https://fonts.google.com/specimen/Nunito">Nunito</a> - and <a
+							href="https://materialdesignicons.com/" target="_blank">Material design
+							icons</a> for icons.</p>
+				</div>
+				
+				<div id="js" class="documentation__block">
+					<h1>JavaScript</h1>
+					<p>All the js-files are placed here:</p>
+					<div class="file-tree">
+						<ul>
+							<li><i class="mdi mdi-folder-open" aria-hidden="true"></i>template
+								<ul>
+									<li><i class="mdi mdi-folder-open" aria-hidden="true"></i>assets
+										<ul>
+											<li><i class="mdi mdi-folder-open" aria-hidden="true"></i>js
+												<ul>
+													<li><i class="mdi mdi-file-outline" aria-hidden="true"></i>carousel.js</li>
+													<li><i class="mdi mdi-file-outline" aria-hidden="true"></i>faq.js</li>
+													<li><i class="mdi mdi-file-outline" aria-hidden="true"></i>form.js</li>
+													<li><i class="mdi mdi-file-outline" aria-hidden="true"></i>jquery.waypoints.js</li>
+													<li><i class="mdi mdi-file-outline" aria-hidden="true"></i>jquery-ui.min.js</li>
+													<li><i class="mdi mdi-file-outline" aria-hidden="true"></i>menu.js</li>
+													<li><i class="mdi mdi-file-outline" aria-hidden="true"></i>mobile-menu.js</li>
+													<li><i class="mdi mdi-file-outline" aria-hidden="true"></i>pricing.js</li>
+													<li><i class="mdi mdi-file-outline" aria-hidden="true"></i>sidebar.js</li>
+													<li><i class="mdi mdi-file-outline" aria-hidden="true"></i>slick.min.js</li>
+													<li><i class="mdi mdi-file-outline" aria-hidden="true"></i>topbar.js</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<p><b>carousel.js</b> - activate carousel sliders.<br><b>faq.js</b> - functions of opening and closing
+							F.A.Q cards.<br><b>form.js</b> - validation form and sending data to <b>mail.php</b>.<br><a
+							href="https://github.com/imakewebthings/waypoints" class="link link--accent-bold"><b>
+							jquery.waypoints.js</b></a> - a smooth scrolling to anchors inside a page.<br><b>menu.js</b> - menu
+						  behavior.<br><b>mobile-menu.js</b> - mobile menu behavior.<br><b>pricing.js</b> - functions of all types
+							of pricing.<br><b>sidebar.js</b> - fixing a sidebar in <b>faq.html</b> and <b>privacy.html</b>.<br>
+							<a class="link link--accent-bold" href="https://github.com/kenwheeler/slick/"><b>slick.min.js</b></a> -
+							plugin of carousel sliders.<br><b>topbar.js</b> - fixing a topbar in <b>features.html</b>.</p>
+				</div>
+				
+				<div id="source" class="documentation__block">
+					<h1>Editing source code</h1>
+					<p>First of all you need to prepare your environment.</p>
+					<ol>
+						<li><p>Download and install latest stable version of <a href="https://nodejs.org/en/">node.js</a>
+							and npm.</p></li>
+						<li><p>Install gulp: <b>npm i gulp-cli</b>.</p></li>
+						<li><p>Open the folder with project in terminal (or cmd) and run: npm i.</p></li>
+						<li><p>After you edit source .scss files run <b>gulp</b> or <b>gulp build</b> to compile your changes.</p>
+						</li>
+					</ol>
+					<p><b>.scss-files</b> have next structure:</p>
+					<div class="file-tree">
+						<ul>
+							<li><i class="mdi mdi-folder-open" aria-hidden="true"></i>template
+								<ul>
+									<li><i class="mdi mdi-folder-open" aria-hidden="true"></i>assets
+										<ul>
+											<li><i class="mdi mdi-folder-open" aria-hidden="true"></i>scss
+												<ul>
+													<li><i class="mdi mdi-folder" aria-hidden="true"></i>base</li>
+													<li><i class="mdi mdi-folder" aria-hidden="true"></i>components</li>
+													<li><i class="mdi mdi-folder" aria-hidden="true"></i>generic</li>
+													<li><i class="mdi mdi-folder" aria-hidden="true"></i>objects</li>
+													<li><i class="mdi mdi-folder" aria-hidden="true"></i>settings</li>
+													<li><i class="mdi mdi-folder" aria-hidden="true"></i>tools</li>
+													<li><i class="mdi mdi-folder" aria-hidden="true"></i>utilities</li>
+													<li><i class="mdi mdi-folder" aria-hidden="true"></i>vendor</li>
+													<li><i class="mdi mdi-file-outline" aria-hidden="true"></i>main.scss</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<p>Main resources: </p>
+					<ul>
+						<li><a href="http://sass-lang.com/" target="_blank">Sass</a></li>
+						<li><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></li>
+						<li><a href="https://github.com/kenwheeler/slick/" target="_blank">Slick</a></li>
+					</ul>
+					<p>Good luck ;)</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--Documentation-->
+
+<!--Footer-->
+<footer id="footer" class="footer">
+	<div class="container">
+		Blood&Fire@2017
+	</div>
+</footer>
+<!--Footer-->
+
+<!--Modal-->
+<div class="modal fade review-modal" id="reviewModal" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<h3>Wanna technical review for free?</h3>
+				<p>We’ll test your site, serch the issues and provide detailed report.</p>
+				<a href="http://previews.aspirity.com/support/" class="site-btn-doc" target="_blank">Yes, I want review</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!--Modal-->
+
+
+<script
+	src="https://code.jquery.com/jquery-2.2.4.min.js"
+	integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	crossorigin="anonymous"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/sigma/dragscrollable.min.js"></script>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+<script src="assets/js/menu.js"></script>
+<script src="assets/js/documentation.js"></script>
+<script src="assets/js/modal.js"></script>
+<script src="assets/js/sigma/faq.js"></script>
+<script src="assets/js/sigma/jquery-ui.min.js"></script>
+<script src="assets/js/sigma/pricing.js"></script>
+<script src="assets/js/sigma/slick.min.js"></script>
+<script src="assets/js/sigma/carousel.js"></script>
+<script src="assets/js/sigma/site-table.js"></script>
+
+</body>
+</html>

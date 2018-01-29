@@ -1,0 +1,102 @@
+/*------------------------------------
+ #MAIN
+\*------------------------------------*/
+/**
+ * SETTINGS
+ * Variables...............Variables for themes.
+ *
+ * GENERIC
+ * Normalize................Normalize browser defaults.
+ * Box-sizing...........More manageable box-model.
+ *
+ * Base
+ * Scaffolding................Style bare tags.
+ * Type................Style of types.
+ *
+ * OBJECTS
+ * Layout...............layout settings.
+ *
+ * COMPONENTS
+ * Header-home................Form styling.
+ * Site-btn..............Button styles.
+ * etc...
+ *
+ * THEMES
+ * Themes................Global themes, like changing all page colors.
+ *
+ * UTILITIES
+ * Helpers..............Helper classes of any purpose.
+ * States...............States of components. Like --is-hidden or smth else.
+ *
+ * VENDOR
+ * Modifications..............Change vendor style (JS plugins and so on).
+ *
+ */
+
+// Variables
+@import "settings/variables.scss";
+
+// Vendor
+@import "vendor/vendors-extensions.scss";
+@import "vendor/slick.scss";
+@import "vendor/slick-theme.scss";
+
+// Main
+@import "settings/fonts.scss";
+@import "tools/mixins.scss";
+@import "generic/normalize.scss";
+@import "generic/box-sizing.scss";
+@import "base/scaffolding.scss";
+@import "base/type.scss";
+@import "objects/media.scss";
+@import "objects/animations.scss";
+
+//Components
+@import "components/header-home.scss";
+@import "components/site-btn.scss";
+@import "components/section.scss";
+@import "components/features.scss";
+@import "components/card.scss";
+@import "components/questions.scss";
+@import "components/feedback.scss";
+@import "components/link.scss";
+@import "components/logo.scss";
+@import "components/download.scss";
+@import "components/menu.scss";
+@import "components/svg-element.scss";
+@import "components/footer-menu.scss";
+@import "components/footer.scss";
+@import "components/about-app.scss";
+@import "components/video.scss";
+@import "components/platforms.scss";
+@import "components/integrate.scss";
+@import "components/users-over.scss";
+@import "components/carousel.scss";
+@import "components/background.scss";
+@import "components/preview.scss";
+@import "components/native.scss";
+@import "components/topbar";
+@import "components/privacy.scss";
+@import "components/faq";
+@import "components/opportunities.scss";
+@import "components/leadership.scss";
+@import "components/events.scss";
+@import "components/believe.scss";
+@import "components/gallery.scss";
+@import "components/pricing.scss";
+@import "components/toggle-checkbox";
+@import "components/site-table.scss";
+@import "components/form.scss";
+@import "components/radio-btn.scss";
+@import "components/checkbox-btn.scss";
+@import "components/mobile-menu.scss";
+@import "components/sidebar.scss";
+@import "components/style-switcher.scss";
+
+// Obj
+@import "objects/layout.scss";
+@import "objects/media.scss";
+
+// Utils
+@import "utilities/helpers.scss";
+@import "utilities/states.scss";
