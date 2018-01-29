@@ -1345,7 +1345,7 @@ h4 {
 }
 
 .features .features__card--big .features__description {
-  margin-bottom: 88px
+  margin-bottom: 20px
 }
 
 .features .features__card--big .features__card-btn-wrap {
@@ -1369,7 +1369,7 @@ h4 {
   font-size: 18px;
   line-height: 28px;
   margin: 0;
-  color: #7d93b2
+  color: #f23f57;
 }
 
 @media screen and (max-width: 1199px) {
@@ -1710,10 +1710,10 @@ h4 {
 }
 
 .menu .menu__logo-title {
-  font-weight: 800;
+  font-weight: 500;
   color: #234c87;
   display: inline-block;
-  font-size: 24px;
+  font-size: 22px;
   padding-left: 15px;
   margin: 0;
   vertical-align: top;
