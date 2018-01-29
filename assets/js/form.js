@@ -56,7 +56,6 @@ function submitForm(e, formName) {
   var company = $(formName + ' .js-field__company').val();
   var size = $(formName + ' .radio-btn__radio[name="company-size"]:checked').val();
 
-
   var formData = {
     name: name,
     lastName: lastName,
